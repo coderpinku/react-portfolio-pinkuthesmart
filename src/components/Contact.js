@@ -24,10 +24,10 @@ const Contact = () => {
           </div>
           <div>
             <form className='flex flex-col gap-4 ' action='./'>
-              <input className='pl-4 w-96 h-[2.5rem] rounded-md shadow-lg' type='text' placeholder="Full Name" />
-              <input className='pl-4 w-96 h-[2.5rem] rounded-md shadow-lg' type='email' placeholder="Email" />
-              <textarea className='pl-4 w-96 h-[8rem] rounded-md shadow-lg' placeholder="Your Message" />
-              <input className='pl-4 w-96 h-[2.5rem] rounded-md bg-yellow-400 border-2 border-solid border-yellow-400 cursor-pointer hover:bg-white font-bold shadow-lg' type='submit' />
+              <input className='pl-4 w-96 h-[2.5rem]  max-md:w-80 rounded-md shadow-lg' type='email' placeholder="Email" />
+              <input className='pl-4 w-96 h-[2.5rem]  max-md:w-80 rounded-md shadow-lg' type='text' placeholder="Full Name" />
+              <textarea className='pl-4 w-96 h-[8rem] max-md:w-80 rounded-md shadow-lg' placeholder="Your Message" />
+              <input className='pl-4 w-96 h-[2.5rem]  max-md:w-80 rounded-md bg-yellow-400 border-2 border-solid border-yellow-400 cursor-pointer hover:bg-white font-bold shadow-lg' type='submit' />
 
             </form>
           </div>

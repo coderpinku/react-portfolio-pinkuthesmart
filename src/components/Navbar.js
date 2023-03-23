@@ -2,14 +2,14 @@ import React from 'react'
 import { MdDarkMode, MdLightMode } from "react-icons/md"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
-import { useState } from "react"
+import {  useState } from "react"
 
-const Navbar = () => {
+const Navbar = (props) => {
+
     const [menuBar, setMenuBar] = useState(true);
-    const [darkMode, setDarkMode] = useState(true);
 
     return (
-        <header class="sticky top-0 bg-slate-300 flex items-center justify-between px-4 py-2  ">
+        <header class="sticky top-0 bg-slate-300 flex items-center justify-between px-4 py-2">
             <div>
                 <span class="text-2xl font-semibold cursor-pointer">&lt;#streetCoder/&gt;</span>
             </div>
@@ -20,11 +20,8 @@ const Navbar = () => {
                     <li><a href='#'> portfolio</a></li>
                     <li><a href='#'> skills</a></li>
                     <li><a href='#'> contact</a></li>
-
-
-                    <div onClick={() => setDarkMode(!darkMode)}>
-                        {darkMode ? <MdDarkMode size={25} /> : <MdLightMode size={25} />}
-
+                    <div onClick={props.toggleDarkMode} className="cursor-pointer">
+                        {props.darkMode ? <MdDarkMode size={25} /> : <MdLightMode size={25} />}
                     </div>
                 </ul>
             </div>
