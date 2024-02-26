@@ -31,6 +31,10 @@ const About = () => {
               user-friendly website and applications. I am always eager to learn
               new technology and techniques to improve my skills.
             </li>
+
+            <li className="mt-6">
+              I am continuously learning.....
+            </li>
           </ul>
         </div>
       </div>

@@ -17,7 +17,11 @@ export default function Header() {
             backSpeed={100}
             loop
             style={{ fontSize: "2rem", fontWeight: "700" }}
-          ></Typed>
+            ></Typed><br/>
+            <Typed
+            strings={["Aspring a Full-stack Developer"]}
+            style={{ fontSize: "1.5rem", fontWeight: "500" }}
+            ></Typed>
           <br />
           <a href="#">
             {" "}
