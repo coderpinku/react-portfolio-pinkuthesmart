@@ -8,28 +8,28 @@ const Navbar = (props) => {
   const [menuBar, setMenuBar] = useState(true);
 
   return (
-    <header class="sticky top-0 bg-slate-300 flex items-center justify-between px-4 py-2 z-10">
+    <header className="sticky top-0 bg-slate-300 flex items-center justify-between px-4 py-2 z-10 dark:bg-bg_dark">
       <div>
-        <span class="text-2xl font-semibold cursor-pointer">
-          &lt;#streetCoder/&gt;
+        <span className="text-2xl font-semibold cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-500">
+          &lt;#pinkuthesmart/&gt;
         </span>
       </div>
       <div>
-        <ul class="flex items-center px-15px list-none text-lg font-semibold space-x-12 uppercase max-md:hidden">
+        <ul className="flex items-center px-15px list-none text-lg font-semibold space-x-12 uppercase max-md:hidden">
           <li>
-            <a href="#"> home</a>
+            <a href="#home"> home</a>
           </li>
           <li>
-            <a href="#"> about</a>
+            <a href="#about"> about</a>
           </li>
           <li>
-            <a href="#"> portfolio</a>
+            <a href="#portfolio">portfolio</a>
           </li>
           <li>
-            <a href="#"> skills</a>
+            <a href="#skills"> skills</a>
           </li>
           <li>
-            <a href="#"> contact</a>
+            <a href="#contact"> contact</a>
           </li>
           <div onClick={props.toggleDarkMode} className="cursor-pointer">
             {props.darkMode ? (
@@ -40,30 +40,30 @@ const Navbar = (props) => {
           </div>
         </ul>
       </div>
-      <span class="hidden max-md:block" onClick={() => setMenuBar(!menuBar)}>
+      <span className="hidden max-md:block" onClick={() => setMenuBar(!menuBar)}>
         {menuBar ? <GiHamburgerMenu size={25} /> : <AiOutlineClose size={25} />}
       </span>
       <ul
         className={
           menuBar
-            ? "ease-in-out duration-500 fixed left-[-100%]"
-            : "fixed  left-0 top-0 w-[60%] h-full  bg-slate-200 ease-in-out duration-500 font-bold"
+          ? "ease-in-out duration-500 fixed left-[-100%] "
+          : "fixed  left-0 top-0 w-[60%] h-full  bg-slate-200 ease-in-out duration-500 font-bold dark:bg-bg_dark"
         }
-      >
+        >
         <li className="p-4">
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li className="p-4">
-          <a href="#">about</a>
+          <a href="#about">About</a>
         </li>
         <li className="p-4">
-          <a href="#">portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li className="p-4">
-          <a href="#">skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li className="p-4">
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </header>

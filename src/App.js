@@ -16,6 +16,8 @@ function App() {
         image={project.image}
         description={project.description}
         techstack={project.techstack}
+        demo={project.demo}
+        github={project.github}
       />
     );
   });
@@ -24,10 +26,11 @@ function App() {
 
   const toggleDarkMode = () => {
     setDarkMode((preMode) => !preMode);
+    document.documentElement.classList.toggle("dark");
   };
   return (
-    <div class="scroll-smooth">
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+    <div class="scroll-smooth dark:bg-slate-800 dark:text-whiteFont ">
+      <Navbar darkMode={darkMode} onClick={toggleDarkMode} toggleDarkMode={toggleDarkMode} />
       <Header />
       <About />
       <div className="relative bottom-0">

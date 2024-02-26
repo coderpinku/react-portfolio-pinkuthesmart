@@ -3,33 +3,33 @@ import { BsFillCameraVideoFill, BsEyeFill, BsGithub } from "react-icons/bs";
 const ProjectCards = (projectData) => {
   return (
     <section>
-      <div class="flex justify-center">
-        <div class="bg-white gap-3 w-[20rem] h-auto rounded-md p-4 flex flex-col justify-center items-center shadow-lg hover:bg-yellow-50">
+      <div className="flex justify-center ">
+        <div className="dark:bg-bg_dark bg-white gap-3 w-[20rem] h-auto rounded-md p-4 flex flex-col justify-center items-center shadow-lg dark:shadow-blue-500/50 hover:bg-yellow-50">
           <div>
             <img
-              class="h-[10rem] w-[20rem] rounded-md "
+              className="h-[10rem] w-[20rem] rounded-md "
               src={projectData.image}
             ></img>
           </div>
-          <div class="w-72 gap-3 flex flex-col">
-            <h3 class="text-center font-bold text-2xl font-mono">
+          <div className="w-72 gap-3 flex flex-col">
+            <h3 className="text-center font-bold text-2xl">
               {projectData.name}
             </h3>
             <p>{projectData.description}</p>
             <p>
-              <span class="text-yellow-500 font-semibold">Tech Stack: </span>
+              <span className="text-yellow-500 font-semibold">Tech Stack: </span>
               {projectData.techstack}
             </p>
           </div>
-          <div class="flex gap-24">
-            <a href="#">
-              <BsFillCameraVideoFill size={30} class="hover:text-yellow-400" />
+          <div className="flex gap-24">
+              <a href="#">
+              <BsFillCameraVideoFill size={30} className="hover:text-yellow-400"/>
             </a>
-            <a href="#">
-              <BsEyeFill size={32} class="hover:text-yellow-400" />
+            <a href={projectData.demo} target="_blank">
+              <BsEyeFill size={32} className="hover:text-yellow-400" />
             </a>
-            <a href="#">
-              <BsGithub size={26} class="hover:text-yellow-400" />
+            <a href={projectData.github} target="_blank">
+              <BsGithub size={26} className="hover:text-yellow-400" />
             </a>
           </div>
         </div>
