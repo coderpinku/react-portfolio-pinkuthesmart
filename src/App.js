@@ -5,40 +5,34 @@ import Portfolio from "./components/Portfolio";
 import projectData from "./components/projectData";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import ProjectCards from "./ProjectCards";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
-  const projectElement = projectData.map((project) => {
-    return (
-      <ProjectCards
-        name={project.projectName}
-        image={project.image}
-        description={project.description}
-        techstack={project.techstack}
-        demo={project.demo}
-        github={project.github}
-      />
-    );
-  });
+ 
 
   const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
+
+
 
   const toggleDarkMode = () => {
     setDarkMode((preMode) => !preMode);
     document.documentElement.classList.toggle("dark");
   };
   return (
-    <div class="scroll-smooth dark:bg-slate-800 dark:text-whiteFont ">
+    <div className="scroll-smooth dark:bg-bg_dark dark:text-whiteFont ">
       <Navbar darkMode={darkMode} onClick={toggleDarkMode} toggleDarkMode={toggleDarkMode} />
       <Header />
       <About />
-      <div className="relative bottom-0">
-        <Portfolio />
-        <div className="flex flex-wrap justify-center items-center absolute top-[5rem] gap-4 right-0 max-md:pt-8">
-          {projectElement}
-        </div>
-      </div>
+      <Portfolio projectData = {projectData}/>  
       <Skills />
       <Contact />
     </div>

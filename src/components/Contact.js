@@ -4,26 +4,26 @@ const Contact = () => {
   return (
     <section className="bg-slate-300 dark:bg-bg_dark" id="contact">
       <div>
-        <h1 className="text-4xl text-center py-4 font-bold mb-8">
+        <h1 className="text-4xl text-center py-4 font-medium mb-8">
           Chat with Me...
         </h1>
       </div>
       <div className="flex justify-around items-center max-md:flex-wrap">
         <div className="min-w-1/2 ">
           <img
-            className="max-md:w-72 max-md:h-72 max-md:mb-16 max-md:ml-6 max-md:pl-4 h-96 w-96 self-center ml-6"
+            className="max-md:w-72 max-md:h-72 max-md:mb-16 max-md:ml-6 max-md:m-auto h-96 w-96 self-center ml-6"
             src="/image/contact.png"
           ></img>
         </div>
         <div className="flex flex-col gap-8">
           <div className="flex justify-around">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/pinku-kumar-5a73b0247/" target="_blank">
               <img
                 className="h-[2rem] w-[2rem]"
                 src="./image/linkedin.png"
               ></img>
             </a>
-            <a href="#">
+            <a href="https://github.com/coderpinku" target="_blank">
               <img className="h-[2rem] w-[2rem] " src="./image/github.png"></img>
             </a>
             <a href="#">
@@ -57,9 +57,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center font-semibold mt-14 pb-4 text-slate-600">
+      <div className="flex justify-center items-center font-medium mt-14 pb-4 text-slate-600">
         <h5 className="text-center dark:text-whiteFont">
-          Design and build by Pinku Kumar, 2022 &copy; All rights reserved.{" "}
+          Design and build by Pinku Kumar, 2023 &copy; All rights reserved.{" "}
         </h5>
       </div>
     </section>

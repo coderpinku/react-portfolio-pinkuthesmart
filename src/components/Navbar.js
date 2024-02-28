@@ -8,14 +8,14 @@ const Navbar = (props) => {
   const [menuBar, setMenuBar] = useState(true);
 
   return (
-    <header className="sticky top-0 bg-slate-300 flex items-center justify-between px-4 py-2 z-10 dark:bg-bg_dark">
+    <header className="sticky top-0 bg-slate-300 flex items-center justify-between px-4 py-2 z-10 dark:bg-bg_dark h-[80px]">
       <div>
-        <span className="text-2xl font-semibold cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-500">
-          &lt;#pinkuthesmart/&gt;
+        <span className="text-[2rem] font-medium cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-500">
+          &lt;#Pinkuthesmart/&gt;
         </span>
       </div>
       <div>
-        <ul className="flex items-center px-15px list-none text-lg font-semibold space-x-12 uppercase max-md:hidden">
+        <ul className="flex items-center px-15px list-none text-[1rem] font-medium space-x-12 uppercase max-md:hidden">
           <li>
             <a href="#home"> home</a>
           </li>

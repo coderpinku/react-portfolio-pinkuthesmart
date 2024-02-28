@@ -55,6 +55,5 @@ export default [
     techstack: "HTML, CSS, JavaScript",
     demo:"https://keyword-analyser.netlify.app/",
     github:"https://github.com/coderpinku/keywordanalyser"
-  },
-  
+  }  
 ];

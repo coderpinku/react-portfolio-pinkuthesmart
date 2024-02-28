@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section id="skills">
       <div>
-        <h1 class="text-4xl text-center py-4 font-bold">
+        <h1 className="text-4xl text-center py-4 font-medium">
           My Technical Skills...
         </h1>
       </div>
