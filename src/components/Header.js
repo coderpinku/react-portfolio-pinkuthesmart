@@ -2,7 +2,7 @@ import Typed from "react-typed";
 export default function Header() {
   return (
     <section className="bg-slate-300 h-dvh dark:bg-bg_dark" id="home">
-      <section className="flex font-sans items-center justify-center gap-24 m-auto py-24 max-md:flex-wrap-reverse ">
+      <section className="flex font-sans items-center justify-center gap-24 py-24 max-md:flex-wrap-reverse ">
         <div className="text-center sm:text-left">
           <p className="text-3xl font-normal my-1 max-md:text-3xl">
             Hi, My name is
@@ -34,13 +34,13 @@ Resume
 </span>
 </button>
         </div>
-        <div>
+        <div className="h-auto w-[30%] max-md:w-[80%]">
           <img
-            className="h-auto w-[80%] border-8 shadow-[0_20px_80px_5px_rgba(0,0,0,0.3)]
+            className="relative rounded-full border-4 shadow-[0_20px_80px_5px_rgba(0,0,0,0.3)]
              shadow-yellow-400 hover:shadow-red-400 border-solid border-yellow-400 
-             rounded-full max-md:m-auto cursor-pointer 
+              max-md:m-auto cursor-pointer 
              dark:shadow-blue-500/50 dark:hover:shadow-yellow-500/50"
-            src="/image/pic-design.png"
+            src="/image/project-pic.jpg"
           ></img>
         </div>
       </section>
